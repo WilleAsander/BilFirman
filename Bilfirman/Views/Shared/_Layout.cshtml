@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="header">
+        <div class="btn btn-default">
+            @Html.ActionLink("Home", "Index","Home")
+        </div>
+        <div class="btn btn-default">
+            @Html.ActionLink("Rent a car", "Index", "Rental")
+        </div>
+            
+        
+    </div>
+    @RenderBody()
+</body>
+</html>

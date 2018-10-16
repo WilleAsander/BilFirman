@@ -1,0 +1,23 @@
+﻿@model List<Bilfirman.Models.Car>
+
+<ul>
+    @foreach (var item in Model)
+    {
+
+        <li>@if (item.Manufacturer == "BMW")
+        {
+            <img class="carpic" src="~/Content/bmw.jpg"/>
+        }
+        else if (item.Manufacturer == "Tesla")
+        {
+            <img class="carpic" src="~/Content/tesla.jpg" />
+        }
+        else if (item.Manufacturer == "Nissan")
+        {
+            <img class="carpic" src="~/Content/nissan.jpg" />
+        }
+             @item.Manufacturer @item.Model | @Html.ActionLink("Info", "Details", new { Registration = item.Registration })</li>
+    }
+
+</ul>
+

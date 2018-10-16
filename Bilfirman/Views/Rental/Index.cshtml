@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Rent a car here!</h2>
+
+<div>
+    @{ 
+        Html.RenderAction("cars");
+    }
+</div>
+<div>
+    @{ 
+        Html.RenderAction("Customers");
+    }
+</div>
+

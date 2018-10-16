@@ -1,0 +1,23 @@
+﻿body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    text-decoration:none;
+    padding: 10px;
+    background-color: dimgrey;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.link {
+    text-decoration:none;
+    color: white;
+    width:auto;
+}
+
+.carpic {
+    width: 200px;
+    height: 200px;
+    image-resolution: 200dpi;
+}

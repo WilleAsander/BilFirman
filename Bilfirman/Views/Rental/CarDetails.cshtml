@@ -1,0 +1,19 @@
+﻿@model Bilfirman.Models.Car
+    <div>
+        <h3>@Model.Manufacturer @Model.Model </h3>
+        Colour: @Model.Color <br />
+        Registration: @Model.Registration
+
+        <br />
+        @if (Model.Rented == true)
+        {
+            Write("Car is rented at the moment");
+        }
+        else
+        {
+            @Html.ActionLink("Rent here!", "Index", "Rental");
+        }
+    </div>
+    <div>
+        @Html.ActionLink("Back", "Index")
+    </div>
